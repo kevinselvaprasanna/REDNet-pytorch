@@ -7,7 +7,7 @@ import io
 import numpy as np
 import PIL.Image as pil_image
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
 tf.enable_eager_execution(config=config)
